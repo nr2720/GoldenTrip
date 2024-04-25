@@ -127,11 +127,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.choiceDiv {
-  animation: transform 0.9s ease;
-}
-
-
 
 
 
