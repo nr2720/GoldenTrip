@@ -657,3 +657,7 @@ p {
 .buttonCar {
   width: 161px;
 }
+
+.cards label {
+  border-radius: 20px;
+}

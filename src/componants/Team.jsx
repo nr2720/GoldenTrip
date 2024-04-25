@@ -1,9 +1,58 @@
 import { useState } from 'react'
+import party1 from '/carouselmg/party1.png'
+import party2 from '/carouselmg/party2.png'
+import party3 from '/carouselmg/party3.png'
+import party4 from '/carouselmg/party4.png'
+import party5 from '/carouselmg/party5.png'
+
+import relax1 from '/carouselmg/relax1.png'
+import relax2 from '/carouselmg/relax2.png'
+import relax3 from '/carouselmg/relax3.png'
+import relax4 from '/carouselmg/relax4.png'
+import relax5 from '/carouselmg/relax5.png'
+
+import explore1 from '/carouselmg/explore1.png'
+import explore2 from '/carouselmg/explore2.png'
+import explore3 from '/carouselmg/explore3.png'
+import explore4 from '/carouselmg/explore4.png'
+import explore5 from '/carouselmg/explore5.png'
+
+
+
+
+
+
+
+
+
+
 function Team() {
     const [selectedCard, setSelectedCard] = useState(1);
+    const [selectedImg, setSelectedImg] = useState(
+        [party1, party2, party3, party4, party5]
+    )
 
     const handleClick = (event) => {
         setSelectedCard(parseInt(event.target.id.slice(1)))
+    }
+
+    const handleChoice = (event) => {
+        let newArr = [];
+        const e = parseInt(event.target.value);
+        switch(e){
+            case 0:
+                newArr = [party1, party2, party3, party4, party5];
+                break;
+            case 1:
+                newArr = [relax1, relax2, relax3, relax4, relax5];
+                break;
+            case 2:
+                newArr = [explore1, explore2, explore3, explore4, explore5];
+                break;
+            default:
+                break;
+        }
+        setSelectedImg(newArr);
     }
 
 
@@ -22,27 +71,27 @@ function Team() {
                 <div className="cards">
                     <label htmlFor="s1" id="slide1">
                         <div className="card">
-                            <img className='imageSlide' src="/carouselmg/image1.png" alt="*" />
+                            <img className='imageSlide' src={selectedImg[0]} alt="*" />
                         </div>
                     </label>
                     <label htmlFor="s2" id="slide2">
                         <div className="card">
-                            <img className='imageSlide' src="/carouselmg/image2.png" alt="*" />
+                            <img className='imageSlide' src={selectedImg[1]} alt="*" />
                         </div>
                     </label>
                     <label htmlFor="s3" id="slide3">
                         <div className="card">
-                            <img className='imageSlide' src="/carouselmg/image3.png" alt="*" />
+                            <img className='imageSlide' src={selectedImg[2]} alt="*" />
                         </div>
                     </label>
                     <label htmlFor="s4" id="slide4">
                         <div className="card">
-                            <img className='imageSlide' src="/carouselmg/image4.png" alt="*" />
+                            <img className='imageSlide' src={selectedImg[3]} alt="*" />
                         </div>
                     </label>
                     <label htmlFor="s5" id="slide5">
                         <div className="card">
-                            <img className='imageSlide' src="/carouselmg/image5.png" alt="*" />
+                            <img className='imageSlide' src={selectedImg[4]} alt="*" />
                         </div>
                     </label>
                 </div>
@@ -50,9 +99,9 @@ function Team() {
         </div>
         <div className="ChoiceButtons">
         
-        <button className='button-76 buttonCar' id='buttonCar1'>Party</button>
-        <button className='button-76 buttonCar' id='buttonCar2'>Relax</button>
-        <button className='button-76 buttonCar' id='buttonCar3'>Adventure</button>
+        <button className='button-76 buttonCar' id='buttonCar1' value={0} onClick={handleChoice}>Party</button>
+        <button className='button-76 buttonCar' id='buttonCar2' value={1} onClick={handleChoice}>Relax</button>
+        <button className='button-76 buttonCar' id='buttonCar3' value={2} onClick={handleChoice}>Adventure</button>
         
      </div>
      </div>
