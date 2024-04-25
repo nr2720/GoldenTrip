@@ -115,10 +115,16 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px;
+  padding: 100px;
   margin: 0;
+  height: 60%;
+  width: 400px;
+  top: 50px;
+  left: 100px;
+  border-radius: 20px;
   position: relative;
   z-index: +2;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   
 }
 
@@ -133,8 +139,8 @@ p {
   position: absolute;
   left: 65%;
   top: -5%;
-  box-shadow: 0px 0px 10px -1px black;
-  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 25px;
   align-items: center;
   justify-content: center;
   z-index: +2;
@@ -142,11 +148,21 @@ p {
 
 .textExplanation {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-evenly;
 }
+
+.textExplanation h2 {
+  margin: 0;
+}
+
+.textExplanation p {
+  font-size: 1.1rem;
+}
+
+.textExplanation 
 
 .textButton {
   height: 10%;
