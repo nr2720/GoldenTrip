@@ -113,7 +113,7 @@ p {
 .leftPresentation {
   flex-basis: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 100px;
   margin: 0;
@@ -151,7 +151,9 @@ p {
   height: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
+  position: absolute;
+  top: -20px;
 }
 
 .textExplanation h2 {
@@ -159,7 +161,8 @@ p {
 }
 
 .textExplanation p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin: 10px;
 }
 
 .textExplanation 
@@ -713,3 +716,9 @@ input {
     box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
   }
 }
+
+#getInEx {
+  position: absolute;
+  top: 102%;
+}
+

@@ -25,7 +25,7 @@ function GetIn() {
             <form>
             <input type="text" placeholder="Name" onChange={handleChange} value={name}/>
             <input type="email" placeholder="Email Address" onChange={handleChange} value={email}/>
-            <input type="submit" value="Subscribe"/>
+            <input type="submit" value="Get in touch"/>
             </form>
         </div>
     )

@@ -158,16 +158,30 @@ function ExplanationPresentation() {
             <div className="leftPresentation">
                 <div className="textExplanation">
                 <h2>What is it all about ?</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Doloribus at non incidunt, ipsam quod consequatur ab quisquam ea dolores enim ut nesciunt vel corporis 
-                    eius, nemo magnam soluta eum fugit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Doloribus at non incidunt, ipsam quod consequatur ab quisquam ea dolores enim ut nesciunt vel corporis 
-                    eius, nemo magnam soluta eum fugit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Doloribus at non incidunt, ipsam quod consequatur ab quisquam ea dolores enim ut nesciunt vel corporis 
-                    eius, nemo magnam soluta eum fugit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Doloribus at non incidunt, ipsam quod consequatur ab quisquam ea dolores enim ut nesciunt vel corporis 
-                    eius, nemo magnam soluta eum fugit?</p>
-                    <button className="buttonGold">Get in</button>
+    
+                <p>With us, it's all about mystery. Once you're ready, you'll have to choose between three different style of trip. A party style 
+                a relaxing style or a adventurous style. Once our team received your choice, you'll be taken to a form where you will put a maximum
+                of 10 key code inside. 
+                </p>
+
+                <p>
+                    You will also have to select the time you want your trip to last, and if your a solo traveler
+                    or you're traveling with a group. (Dont worry, a lot of our clients are solo travelers and had met many great friends during their travel trip)
+                </p>
+
+                <p>
+                    From there, you will not need to do ANYTHING. We organize everything, the places you will go, the transport, the eat, where you will sleep. Each night, you 
+                    will receive a specific time to be ready the day after for our guide to take you to the next place, with recommandation of what bringing. 
+                </p>
+
+                <p>
+                    The mystery will last until the last day. You will be in a group of amazing people, leaded by experienced guide who are in love with their jobs. You can see that 
+                    as your own Tv Show
+                </p>
+                    
+
+
+                    <button className="buttonGold" id='getInEx'>Get in</button>
                 </div>
                 
             </div>
