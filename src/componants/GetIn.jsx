@@ -1,7 +1,7 @@
 function GetIn() {
     return(
         <div className="getIn">
-            <button id="getInButton">Get in</button>
+            <button className="buttonGold">Get in</button>
         </div>
     )
 }

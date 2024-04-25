@@ -145,7 +145,7 @@ function ExplanationPresentation() {
 
     const EnjoyTrip = () => {
         return(
-                 <button className='buttonSlide'>Enjoy the best trip of your life.</button>
+         <button className='buttonGold buttonDown'>Enjoy the best trip of your life.</button>
         )
     }
 
@@ -167,8 +167,9 @@ function ExplanationPresentation() {
                     eius, nemo magnam soluta eum fugit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Doloribus at non incidunt, ipsam quod consequatur ab quisquam ea dolores enim ut nesciunt vel corporis 
                     eius, nemo magnam soluta eum fugit?</p>
-                <button className="buttonGold">Get in</button>
+                    <button className="buttonGold">Get in</button>
                 </div>
+                
             </div>
             <div className="rightPresentation">
                 

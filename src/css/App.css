@@ -62,7 +62,7 @@ p {
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   background: rgba(25, 23, 23, 0.5);
 }
 
@@ -117,6 +117,8 @@ p {
   align-items: center;
   padding: 150px;
   margin: 0;
+  position: relative;
+  z-index: +2;
   
 }
 
@@ -135,6 +137,7 @@ p {
   border-radius: 12px;
   align-items: center;
   justify-content: center;
+  z-index: +2;
 }
 
 .textExplanation {
@@ -167,14 +170,7 @@ p {
 
 /* Curves */
 
-.red {
-  background-color: red;
-  color: white;
-}
 
-.white {
-  background-color: white;
-}
 
 /* first curve */
 .custom-shape-divider-bottom-1713854179, .curve2 {
@@ -236,6 +232,7 @@ p {
 
 .textExplanation {
   font-size: 1.3rem;
+  position: relative;
 }
 
 .choicesDiv {
