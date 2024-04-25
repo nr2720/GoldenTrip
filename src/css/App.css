@@ -10,6 +10,7 @@ p {
   margin: 0;
 }
 
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -395,7 +396,7 @@ p {
 #s3:checked ~ .cards #slide3,
 #s4:checked ~ .cards #slide4,
 #s5:checked ~ .cards #slide5 {
-  box-shadow: 0px 16px 40px 20px rgba(125, 73, 211, 0.3);
+  box-shadow: 0px 16px 40px 20px grey;
   transform: translate3d(0,0,0);
 }
 /* second card right */
@@ -421,6 +422,51 @@ p {
 
 .card {
   padding: 0;
+}
+
+.ChoiceButtons {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttonSlide {
+  height: 75px;
+  width: 200px;
+  border-radius: 12px;
+  align-items: center;
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-weight: bold;
+  border: 1px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 0px 0px 52px -5px black;
+}
+
+
+
+
+
+#mysteryH1 {
+  margin-bottom: 50px;
 }
 
 
@@ -480,6 +526,19 @@ p {
   top: 0%;
   left: 0%;
   opacity: 50%;
+}
+
+.blueTypeButton {
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
 }
 
 
@@ -557,3 +616,44 @@ p {
   width: 200px;
 }
 
+
+
+
+
+/* CSS */
+.button-76 {
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-76:hover {
+  box-shadow: none;
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  .button-76 {
+    font-size: 1.5rem; /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem; /* 32px */
+  }
+}
+
+.buttonCar {
+  width: 161px;
+}

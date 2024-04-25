@@ -145,7 +145,7 @@ function ExplanationPresentation() {
 
     const EnjoyTrip = () => {
         return(
-                 <button className='buttonGold'>Enjoy the best trip of your life.</button>
+                 <button className='buttonSlide'>Enjoy the best trip of your life.</button>
         )
     }
 

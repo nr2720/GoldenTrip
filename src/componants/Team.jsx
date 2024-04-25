@@ -9,7 +9,7 @@ function Team() {
 
     return(
 <div className="ourTeamSec">
-    <h1>Our team of passionnate guides</h1>
+    <h1 id='mysteryH1'>What will it be ?</h1>
     <div className="teamSection">
         <div className="slide-wrapper">
             <div className="slider">
@@ -48,7 +48,15 @@ function Team() {
                 </div>
             </div>
         </div>
+        <div className="ChoiceButtons">
+        
+        <button className='button-76 buttonCar' id='buttonCar1'>Party</button>
+        <button className='button-76 buttonCar' id='buttonCar2'>Relax</button>
+        <button className='button-76 buttonCar' id='buttonCar3'>Adventure</button>
+        
      </div>
+     </div>
+
      <div className="custom-shape-divider-top-1713938579">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" className="shape-fill"></path>
