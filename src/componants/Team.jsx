@@ -1,16 +1,23 @@
-
+import { useState } from 'react'
 function Team() {
+    const [selectedCard, setSelectedCard] = useState(1);
+
+    const handleClick = (event) => {
+        setSelectedCard(parseInt(event.target.id.slice(1)))
+    }
+
+
     return(
 <div className="ourTeamSec">
     <h1>Our team of passionnate guides</h1>
     <div className="teamSection">
         <div className="slide-wrapper">
             <div className="slider">
-                <input type="radio" name="slider" id="s1" checked/>
-                <input type="radio" name="slider" id="s2" checked/>
-                <input type="radio" name="slider" id="s3" checked/>
-                <input type="radio" name="slider" id="s4" checked/>
-                <input type="radio" name="slider" id="s5" checked/>
+                <input type="radio" name="slider" id="s1" checked={selectedCard === 1} onClick={handleClick}/>
+                <input type="radio" name="slider" id="s2" checked={selectedCard === 2} onClick={handleClick}/>
+                <input type="radio" name="slider" id="s3" checked={selectedCard === 3} onClick={handleClick}/>
+                <input type="radio" name="slider" id="s4" checked={selectedCard === 4} onClick={handleClick}/>
+                <input type="radio" name="slider" id="s5" checked={selectedCard === 5} onClick={handleClick}/>
 
                 <div className="cards">
                     <label htmlFor="s1" id="slide1">

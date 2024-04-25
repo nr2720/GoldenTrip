@@ -6,9 +6,9 @@ function Header({name}) {
                 <h2>{name}</h2>
             </div>
             <div className="rightHeader">
-                <button className="headerButton">Choose</button>
-                <button className="headerButton">About</button>
-                <button className="headerButton">Book now</button>
+                <button className="buttonGold">Choose</button>
+                <button className="buttonGold">About</button>
+                <button className="buttonGold">Book now</button>
             </div>
         </header>
     )
