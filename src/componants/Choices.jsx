@@ -12,57 +12,10 @@ function Choices() {
     ]
    
     const [choiceList, setChoiceList] = useState(initials)
-    const [choiceNumber, setChoiceNumber] = useState(2);
-    const [clickedChoice, setClickedChoice] = useState('');
-
-
-const handleClick = (e) => {
-    setClickedChoice(e.target.dataset.value);
-}  
-
-useEffect(() => {
-    const choice = clickedChoice;
-    switch(choice) {
-        case 'Party':
-            setChoiceNumber(0);
-            break;
-        case 'Relax':
-            setChoiceNumber(1);
-            break;
-        case 'Explore':
-            setChoiceNumber(2);
-            break;
-        default:
-            break;
-    }
-}, [clickedChoice])
-
-useEffect(() => {
-    if(choiceNumber === 0) {
-        setChoiceList([initials[2], initials[0], initials[1]]);
-    }
-    else if(choiceNumber === 1) {
-       setChoiceList([initials[0], initials[1], initials[2]]);
-    }
-    else if(choiceNumber === 2) {
-        setChoiceList([initials[1], initials[2], initials[0]]);
-    }
-    else {
-        return;
-    }
-    
-}, [choiceNumber])
-
-
-
-
-
-
-
 
     const ImgChoice = ({src, className, name, text, onClick}) => {
         return(
-            <div className='choiceDiv' data-value={name} onClick={onClick}>
+            <div className='choiceDiv' data-value={name}>
                 <img className={className} src={src}></img>
                 <h2 className='nonClick'>{name}</h2>
                 <p className='nonClick'>{text}</p>
@@ -81,7 +34,6 @@ useEffect(() => {
                 name={choice[2]}
                 text={choice[3]}
                 key={choice[2]}
-                onClick={handleClick}
             />
         ))}
             
