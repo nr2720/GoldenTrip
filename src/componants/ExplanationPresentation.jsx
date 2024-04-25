@@ -157,30 +157,21 @@ function ExplanationPresentation() {
         <div className="explanationPresentation">
             <div className="leftPresentation">
                 <div className="textExplanation">
-                <h2>What is it all about ?</h2>
-    
-                <p>With us, it's all about mystery. Once you're ready, you'll have to choose between three different style of trip. A party style 
-                a relaxing style or a adventurous style. Once our team received your choice, you'll be taken to a form where you will put a maximum
-                of 10 key code inside. 
+                <h2>What is GoldenTrip ?</h2>
+                <p> 
+                    Our goal is to create, plan, organise and deliver the <b>best possible travel</b> trip to you, based on your preferences.
                 </p>
 
                 <p>
-                    You will also have to select the time you want your trip to last, and if your a solo traveler
-                    or you're traveling with a group. (Dont worry, a lot of our clients are solo travelers and had met many great friends during their travel trip)
+                    Our team is composed of <b>expert worldwide traveling guides</b>. They know everything about the place they lived, from the most beautiful place to watch a sunset to the best place to party up. <b>Your time will be maximised</b> to
+                    assure your to not miss one second of your trip.
                 </p>
-
                 <p>
-                    From there, you will not need to do ANYTHING. We organize everything, the places you will go, the transport, the eat, where you will sleep. Each night, you 
-                    will receive a specific time to be ready the day after for our guide to take you to the next place, with recommandation of what bringing. 
+                    You'll be asking to write a survey form to get us to know what you like, where you'd like to go, what you want to eat, you previous travel experience and others questions that will help make you a perfect trip.
                 </p>
-
                 <p>
-                    The mystery will last until the last day. You will be in a group of amazing people, leaded by experienced guide who are in love with their jobs. You can see that 
-                    as your own Tv Show
+                    If you're a solo-traveler, you'll be mixed with people from all around the world in a group. New friends (and maybe lover ?) are guaranted. If you are with a group, you'll have the choice to be mixed or to stay togheter. 
                 </p>
-                    
-
-
                     <button className="buttonGold" id='getInEx'>Get in</button>
                 </div>
                 
