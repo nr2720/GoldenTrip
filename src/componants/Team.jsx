@@ -58,7 +58,7 @@ function Team() {
 
     return(
 <div className="ourTeamSec">
-    <h1 id='mysteryH1'>What will it be ?</h1>
+    <h1 id='mysteryH1'>What your travel will look like ?</h1>
     <div className="teamSection">
         <div className="slide-wrapper">
             <div className="slider">
@@ -99,9 +99,9 @@ function Team() {
         </div>
         <div className="ChoiceButtons">
         
-        <button className='button-76 buttonCar' id='buttonCar1' value={0} onClick={handleChoice}>Party</button>
-        <button className='button-76 buttonCar' id='buttonCar2' value={1} onClick={handleChoice}>Relax</button>
-        <button className='button-76 buttonCar' id='buttonCar3' value={2} onClick={handleChoice}>Adventure</button>
+        <button className='buttonGold buttonCar' value={0} onClick={handleChoice}>Party</button>
+        <button className='buttonGold buttonCar' value={1} onClick={handleChoice}>Relax</button>
+        <button className='buttonGold buttonCar'  value={2} onClick={handleChoice}>Adventure</button>
         
      </div>
      </div>
