@@ -48,9 +48,9 @@ function FirstPresentation() {
                 <video src={video} id="myVideo" autoPlay loop muted />
             </div>
             <div className="firstPresentationCenter">
-               { choose === 0 ? (<h1>The best party trip you'll ever live</h1>) :
-                choose === 1 ? (<h1>The most relaxing trip of your life</h1>) :
-                 (<h1>Live an adventure like never before </h1>)
+               { choose === 0 ? (<h1>The best <b className='partyB'>party</b> trip you'll ever live</h1>) :
+                choose === 1 ? (<h1>The most <b className='relaxB'>relaxing</b> trip of your life</h1>) :
+                 (<h1>Live an <b className='exploreB'>adventure</b> like never before </h1>)
                 }
     
                 <div className="tripChooseButtons">

@@ -722,3 +722,22 @@ input {
   top: 102%;
 }
 
+.partyB {
+  background: -webkit-linear-gradient(#ffffff, #00f084);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.relaxB {
+  background: -webkit-linear-gradient(#ffffff, #0093E9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.exploreB {
+  background: -webkit-linear-gradient(#FFE53B, #FF2525);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
