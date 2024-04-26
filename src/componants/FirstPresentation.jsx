@@ -54,9 +54,9 @@ function FirstPresentation() {
                 }
     
                 <div className="tripChooseButtons">
-                    <ButtonTrip name='Party' className='tripChooseButton buttonGold' onClick={() => handleChoose('Party')}/>
-                    <ButtonTrip name='Relax' className='tripChooseButton buttonGold' onClick={() => handleChoose('Relax')}/>
-                    <ButtonTrip name='Explore' className='tripChooseButton buttonGold' onClick={() => handleChoose('Explore')}/>
+                    <ButtonTrip name='Party' className=' neon-button' onClick={() => handleChoose('Party')}/>
+                    <ButtonTrip name='Relax' className='neon-button-blue' onClick={() => handleChoose('Relax')}/>
+                    <ButtonTrip name='Explore' className='neon-button-orange' onClick={() => handleChoose('Explore')}/>
                 </div>
             </div>
             <div className="custom-shape-divider-bottom-1713854179">

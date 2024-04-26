@@ -119,18 +119,6 @@ h1 {
 
 
 
-button:hover {
-  border-color: rgb(117, 105, 37);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-
-
-
-
 
 
 
