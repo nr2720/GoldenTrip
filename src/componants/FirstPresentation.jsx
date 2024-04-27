@@ -1,5 +1,8 @@
 import {useState} from 'react';
-import video from '/VideoTest.mp4'
+import videoParty from '/videoParty.mp4';
+import videoRelax from '/videoRelax.mp4';
+import videoTravel from '/videoTravel.mp4';
+
 
 
 function FirstPresentation() {
@@ -8,6 +11,8 @@ function FirstPresentation() {
     const [list, setList] = useState({
         english: ['party', 'relax', 'explore']
     });
+
+    const [video, setVideo] = useState(videoParty);
 
     //button fct
     function ButtonTrip({name, className, onClick}) {
@@ -26,12 +31,15 @@ function FirstPresentation() {
         switch(option) {
             case 'Party':
                 setChoose(0);
+                setVideo(videoParty);
                 break;
             case 'Relax':
                 setChoose(1);
+                setVideo(videoRelax);
                 break;
             case 'Explore':
                 setChoose(2);
+                setVideo(videoTravel)
                 break;
             default:
                 break;   
