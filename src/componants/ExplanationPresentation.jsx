@@ -145,7 +145,7 @@ function ExplanationPresentation() {
 
     const EnjoyTrip = () => {
         return(
-         <button className='buttonGold buttonDown'>Enjoy the best trip of your life.</button>
+         <button className='buttonGold buttonDown' id='buttonExplanationEmoji'>Enjoy the best trip of your life.</button>
         )
     }
 
@@ -170,7 +170,7 @@ function ExplanationPresentation() {
                     You'll be asking to write a survey form to get us to know what you like, where you'd like to go, what you want to eat, you previous travel experience and others questions that will help make you a perfect trip.
                 </p>
                 <p>
-                    If you're a solo-traveler, you'll be mixed with people from all around the world in a group. New friends (and maybe lover ?) are guaranted. If you are with a group, you'll have the choice to be mixed or to stay togeth   er. 
+                    If you're a solo-traveler, you'll be mixed with people from all around the world in a group. New friends (and maybe lover ?) are guaranted. If you are with a group, you'll have the choice to be mixed or to stay togeth       er. 
                 </p>
                     <button className="buttonGold" id='getInEx'>Get in</button>
                 </div>
@@ -184,7 +184,7 @@ function ExplanationPresentation() {
                     <EnjoyTrip />
             </div>
             
-                    <div className="custom-shape-divider-bottom-1713855202">
+                    <div className="customShapeTwo">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
             </svg>

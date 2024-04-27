@@ -1,7 +1,7 @@
 
 function Header({name}) {
     return(
-        <header className='header'>
+        <nav className='header'>
             <div className="leftHeader">
                 <h2>{name}</h2>
             </div>
@@ -10,7 +10,7 @@ function Header({name}) {
                 <button className="buttonGold">About</button>
                 <button className="buttonGold">Book now</button>
             </div>
-        </header>
+        </nav> 
     )
 }
 
