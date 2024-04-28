@@ -969,6 +969,7 @@ input {
     flex-basis: 16.6%;
   }
 
+
   #myVideo {
     top: 0px;
     transform: scaleY(1.02);
@@ -976,7 +977,7 @@ input {
 
   .curveShapeOne {
     position: absolute;
-    top: -0.9%;
+    bottom: -0.09%;
     left: 0;
     width: 100%;
     overflow: hidden;
