@@ -935,8 +935,13 @@ input {
 /* mobile */
 @media(max-width: 500px) {
   html, body, #root {
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 
+  }
+
+  body {
+    position: relative;
   }
   .container{
     width: 100%;
@@ -971,6 +976,7 @@ input {
 
   .tripChooseButtons {
     transform: scale(0.9);
+    flex-direction: column;
   }
 
 
@@ -1165,6 +1171,7 @@ input {
 .teamSection {
   flex-direction: column;
   padding-left: 0;
+  width: 100%;
 }
 
 .ChoiceButtons {
@@ -1179,6 +1186,9 @@ input {
   width: 100%;
 }
 
+#mysteryH1 {
+  transform: scale(0.9);
+}
 .slide-wrapper .slider {
   position: relative;
   width: 100%;
@@ -1205,8 +1215,8 @@ input {
 .cards label {
   transition: transform 0.55s ease;
   position: absolute;
-  width: 200px;
-  height: 100%;
+  width: 150px;
+  height: 95%;
   left: 26%;
   right: 0;
   margin: auto;
