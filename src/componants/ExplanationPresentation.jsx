@@ -171,7 +171,7 @@ function ExplanationPresentation() {
                 <p>
                    An entire programmation that fits you is what you get. Give it a try, it's completely free!
                 </p>
-                    <button className="buttonGold" id='getInEx'>Get in</button>
+                    <button className="buttonGold" id='getInEx'>Give me the prog</button>
                 </div>
                 
             </div>

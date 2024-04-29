@@ -106,7 +106,9 @@ p {
   background-color: white;
   flex-basis: 52%;
   color: black;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-template: 1fr / 1fr 1fr;
   position: relative;
 }
@@ -118,10 +120,9 @@ p {
   align-items: center;
   padding: 100px;
   margin: 0;
-  height: 60%;
-  width: 400px;
-  top: 50px;
-  left: 100px;
+  height: 400px;
+  width: 60%;
+  bottom: 7%;
   border-radius: 20px;
   position: relative;
   z-index: +2;
@@ -154,17 +155,20 @@ p {
   align-items: center;
   justify-content: start;
   position: absolute;
-  top: -20px;
+  top: -60px;
 }
 
 .textExplanation h2 {
   margin: 0;
+  font-size: 3rem;
 }
 
 .textExplanation p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 10px;
 }
+
+
 
 
 
@@ -700,7 +704,7 @@ input {
 
 #getInEx {
   position: absolute;
-  top: 102%;
+  top: 115%;
 }
 
 
