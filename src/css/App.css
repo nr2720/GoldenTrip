@@ -945,11 +945,11 @@ input {
   }
   .container{
     width: 100%;
-    height: 5000px ;
+    height: 4600px ;
   }
   /* header mobile */
   .header {
-    flex-basis: 3%;
+    flex-basis: 2.96%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -971,7 +971,7 @@ input {
   /* firstPresentation */
   .firstPresentation{
     width: 100%;
-    flex-basis: 16.6%;
+    flex-basis: 16.42%;
   }
 
   .tripChooseButtons {
@@ -1008,7 +1008,7 @@ input {
 /* Explanation presentation */
 
 .explanationPresentation {
-  flex-basis: 27.27%;
+  flex-basis: 18.98%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1021,7 +1021,7 @@ input {
   top: -7%;
   left: 0;
   width: 80%;
-  flex-basis: 40%;
+  flex-basis: 60%;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1036,15 +1036,17 @@ input {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  text-align: center;
 }
 
 .textExplanation h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .textExplanation p {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
 }
+
 
 
 
@@ -1115,7 +1117,7 @@ input {
 /* Choice section */
 
 .choiceSection {
-  flex-basis: 29.64%;
+  flex-basis: 33.27%;
 }
 
 .choicesDiv {
@@ -1164,7 +1166,7 @@ input {
 }
 
 .carouselDay {
-  flex-basis: 17%;
+  flex-basis: 19.13%;
   padding-top: 15%;
 }
 
@@ -1244,10 +1246,12 @@ input {
 /* get in */
 
 .getIn {
-  flex-basis: 2%;
+  flex-basis: 9.24%;
   padding-bottom: 20%;
   position: relative;
   top: -0.1%;
+}
+
 }
 
 
@@ -1256,4 +1260,18 @@ input {
 
 
 
+
+
+
+
+
+/* Keyframes */
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }

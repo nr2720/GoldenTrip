@@ -163,26 +163,25 @@ function ExplanationPresentation() {
                 </p>
 
                 <p>
-                    Our team is composed of <b>expert worldwide traveling guides</b>. They know everything about the place they lived in, from the most beautiful place to watch a sunset to the best place to party up. <b>Your time will be maximised</b> to
-                    assure your to not miss one second of your trip.
+                   You'll be asked to answer some questions in a survey about what is <b>your</b> perfect trip.
                 </p>
                 <p>
-                    You'll be asking to write a survey form to get us to know what you like, where you'd like to go, what you want to eat, you previous travel experience and others questions that will help make you a perfect trip.
+                    The <b id='magicGolden'>Golden Trip</b> magic will operate and a complete trip schedule will be given to you.
                 </p>
                 <p>
-                    If you're a solo-traveler, you'll be mixed with people from all around the world in a group. New friends (and maybe lover ?) are guaranted. If you are with a group, you'll have the choice to be mixed or to stay togeth       er. 
+                   An entire programmation that fits you is what you get. Give it a try, it's completely free!
                 </p>
                     <button className="buttonGold" id='getInEx'>Get in</button>
                 </div>
                 
             </div>
-            <div className="rightPresentation">
+            {/* <div className="rightPresentation">
                 
                     <ShowExplanationEmoji />
                     <ShowPlanning />
                     <ShowMystery />
                     <EnjoyTrip />
-            </div>
+            </div> */}
             
                     <div className="customShapeTwo">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
