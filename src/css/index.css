@@ -65,6 +65,10 @@ h1 {
   touch-action: manipulation;
 }
 
+.buttonGold:hover {
+  color: black;
+}
+
 .buttonGold:after {
   background-color: #111;
   border-radius: 8px;

@@ -6,7 +6,7 @@ const VipPage = () => {
     return(
         <>
             <div className="containerVip">
-                <Header />
+                <Header name='Golden Trip &#x2708;'/>
                 <MiddleVip />
             </div>
         </>
