@@ -5,7 +5,7 @@ import ExplanationPresentation from './ExplanationPresentation'
 import Choices from './Choices'
 import Team from './Team'
 import GetIn from './GetIn'
-import '../css/App.css'
+import '../../css/App.css'
 
 function App() {
 

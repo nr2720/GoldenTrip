@@ -1,4 +1,8 @@
 
+import { Link } from "react-router-dom";
+
+
+
 function Header({name}) {
     return(
         <nav className='header'>
@@ -8,7 +12,7 @@ function Header({name}) {
             <div className="rightHeader">
                 <button className="buttonGold">Survey</button>
                 <button className="buttonGold">About us</button>
-                <button className="buttonGold">VIP Section</button>
+                <Link to='/vip' className="buttonGold">VIP</Link>
             </div>
         </nav> 
     )
