@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="container">
-       <Header name='Golden Trip &#x2708;'/>
+       <Header name='FlashTrip' className='header'/>
        <FirstPresentation />
        <ExplanationPresentation />
        <Choices />

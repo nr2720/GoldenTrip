@@ -6,7 +6,7 @@ const VipPage = ({cartClick}) => {
     return(
         <>
             <div className="containerVip">
-                <Header name='Golden Trip &#x2708;'/>
+                <Header name='FlashTrip' className='vipHeader'/>
                 <MiddleVip handleCartClick={cartClick} />
             </div>
         </>

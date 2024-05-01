@@ -2,6 +2,13 @@
 .containerVip {
     background-color: aliceblue;
 }
+
+.vipHeader {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 .optionsVipDiv {
     width: 100%;
     display: flex;

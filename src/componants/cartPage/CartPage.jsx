@@ -27,7 +27,7 @@ const CartPage = ({el, handleClearCart}) => {
 
     return (
         <div className="containerCartPage">
-            <Header name='Golden Trip &#x2708;'/>
+            <Header name='FlashTrip' className='cartPageHeader'/>
             <CartHeader price={totalPrice} onClick={handleClearCart}/>
             <CartBody isEmpty={isEmpty} El={choice} />
         </div>

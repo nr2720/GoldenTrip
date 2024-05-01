@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 
 
-function Header({name}) {
+function Header({name, className}) {
     return(
-        <nav className='header'>
+        <nav className={className}>
             <Link to='/' className="leftHeader">
-                <h2>{name}</h2>
+                <img src="/FlashTripLogo.svg" alt={name} className="Logo" />
             </Link>
             <div className="rightHeader">
                 <button className="buttonGold">Survey</button>
