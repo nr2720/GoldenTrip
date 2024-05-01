@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 
-const Options = ({img, title, text, price, id}) => {
+const Options = ({img, title, text, price, id, onClick }) => {
     return(
         <>
             <div className='optionsVip' id={id}>
@@ -9,7 +9,9 @@ const Options = ({img, title, text, price, id}) => {
                 <h2>{title}</h2>
                 <p>{text}</p>
                 <p>Price : {price} USD</p>
-                <Link to='/'>Buy now</Link>
+                <Link to='/cart'>
+                    <button onClick={onClick} value={id} className="buttonGold">Add to cart!</button>
+                </Link>
             </div>
         </>
     )

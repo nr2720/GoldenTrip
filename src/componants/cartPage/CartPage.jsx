@@ -4,16 +4,31 @@ import CartBody from "./CartBody";
 import { useState, useEffect } from 'react';
 import './CartPage.css'
 
-const CartPage = () => {
+const CartPage = ({el, handleClearCart}) => {
     const [totalPrice, setTotalPrice] = useState(0);
     const [isEmpty, setIsEmpty] = useState(true);
-    const [choice, setChoice] = useState(null);
+    const [choice, setChoice] = useState(false);
+
+    useEffect(() => {
+        setChoice(el);
+    }, [el]);
+
+    useEffect(() => {
+        if(choice != false) {
+            setIsEmpty(false);
+            setTotalPrice(el.price);
+        }
+        else{
+            setIsEmpty(true);
+            setTotalPrice(0);
+        }
+    }, [choice]);
 
 
     return (
         <div className="containerCartPage">
             <Header name='Golden Trip &#x2708;'/>
-            <CartHeader price={totalPrice}/>
+            <CartHeader price={totalPrice} onClick={handleClearCart}/>
             <CartBody isEmpty={isEmpty} El={choice} />
         </div>
     )

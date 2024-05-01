@@ -1,10 +1,13 @@
-import App from "./main_page/App";
-import VipPage from "./vipSection/VipPage";
-import ErrorPage from "./ErrorPage";
-import CartPage from "./cartPage/CartPage";
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import CartPage from "./componants/cartPage/CartPage";
+import VipPage from "./componants/vipSection/VipPage";
+import App from "./componants/main_page/App";
+import ErrorPage from "./componants/ErrorPage";
+import { useState } from 'react'
 
+const RealApp = () => {
 
+    const [cartEl, setCartEl] = useState(false);
 
     const handleCartClick = (el) => {
         switch(el.target.value) {
@@ -19,7 +22,7 @@ import { useState } from 'react';
             case 'goldenVip':
                 setCartEl({
                     img: '/Img.svg',
-                    title: 'Basic Vip',
+                    title: 'Golden Vip',
                     text: 'Take the experience to a next level. Let us bring you to the best hotels, fanciest restaurents and best activities. Access activities with VIP pass. Also, access all the advantage of Basic VIP trip.',
                     price: '10 000'
                 });
@@ -38,36 +41,20 @@ import { useState } from 'react';
     
     }
 
-
-
-const routes = [
-    {
-        path: '/',
-        element: <App />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: '/vip',
-        element: <VipPage cartClick={handleCartClick}/>
-    },
-    {
-        path: '/cart',
-        element: <CartPage/>
+    const clearCart = () => {
+        setCartEl(false);
     }
-];
 
+    return(
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App/>}/>
+                <Route path="/vip" element={<VipPage cartClick={handleCartClick}/>}/>
+                <Route path="/cart" element={<CartPage el={cartEl} handleClearCart={clearCart}/>}/>
+                <Route path="*" element={<ErrorPage/>}/>
+            </Routes>
+        </BrowserRouter>
+    )
+}
 
-
-export default routes;
-
-// import { Routes, Route } from "react-router-dom"
-
-
-// const RouteApp = () => {
-//     return(
-//         <Routes>
-//             <Route path="/" element={<App />} errorElement={<ErrorPage />}/>
-//         </Routes>
-
-//     )
-// }
+export default RealApp;
