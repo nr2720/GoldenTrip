@@ -7,11 +7,10 @@ function Header({name, className}) {
     return(
         <nav className={className}>
             <Link to='/' className="leftHeader">
-                <img src="/flashTrip.svg" alt={name} className="Logo" />
+                <img src="/flashTrip.png" alt={name} className="Logo" />
             </Link>
             <div className="rightHeader">
                 <button className="buttonGold">Survey</button>
-                <button className="buttonGold">About us</button>
                 <Link to='/vip' className="buttonGold">VIP</Link>
             </div>
             <Link to='/cart'>
