@@ -7,7 +7,7 @@ function Header({name, className}) {
     return(
         <nav className={className}>
             <Link to='/' className="leftHeader">
-                <img src="/FlashTripLogo.svg" alt={name} className="Logo" />
+                <img src="/flashTrip.svg" alt={name} className="Logo" />
             </Link>
             <div className="rightHeader">
                 <button className="buttonGold">Survey</button>
