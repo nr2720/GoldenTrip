@@ -418,7 +418,7 @@ p {
 #s4:checked ~ .cards #slide2,
 #s5:checked ~ .cards #slide3 {
   box-shadow: 0px 0px 40px -5px black;
-  transform: translate3d(-70%,0,-240px);
+  transform: translate3d(-80%,0,-240px);
 }
 
 /* second card left */
@@ -428,7 +428,7 @@ p {
 #s4:checked ~ .cards #slide3,
 #s5:checked ~ .cards #slide4 {
   box-shadow: 0px 0px 40px -5px black;
-  transform: translate3d(-35%,0,-120px);
+  transform: translate3d(-40%,0,-120px);
 }
 
 /* middle card */
@@ -447,7 +447,7 @@ p {
 #s4:checked ~ .cards #slide5,
 #s5:checked ~ .cards #slide1 {
   box-shadow: 0px 0px 40px -5px black;
-  transform: translate3d(35%,0,-120px);
+  transform: translate3d(40%,0,-120px);
 }
 
 /* third card right */
@@ -458,7 +458,7 @@ p {
 #s4:checked ~ .cards #slide1,
 #s5:checked ~ .cards #slide2 {
   box-shadow: 0px 0px 40px -5px black;
-  transform: translate3d(70%,0,-240px);
+  transform: translate3d(80%,0,-240px);
 }
 
 .card {
