@@ -438,7 +438,7 @@ p {
 #s4:checked ~ .cards #slide4,
 #s5:checked ~ .cards #slide5 {
   box-shadow: 0px 16px 40px 20px grey;
-  transform: translate3d(0,0,-2000);
+  transform: translate3d(0,0,-2000px);
 }
 /* second card right */
 #s1:checked ~ .cards #slide2,
