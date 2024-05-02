@@ -1256,7 +1256,7 @@ input {
   transform-style: preserve-3d;
   position: relative;
   height: 300px;
-  width: 80%;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -1265,7 +1265,7 @@ input {
   position: absolute;
   width: 150px;
   height: 95%;
-  left: 26%;
+  left: 0;
   right: 0;
   margin: auto;
   cursor: pointer;
