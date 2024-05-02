@@ -5,7 +5,7 @@ const CartHeader = ({price, onClick}) => {
         <div className="cartHeader">
             <button className="buttonGold cartButton" onClick={onClick}>Clear Cart</button>
             <h2>{price}$</h2>
-            <Link to='/purchase'><button className="buttonGold cartButton">Finish your order</button></Link>
+            <Link to='/purchase'><button className="buttonGold cartButton">Finish order</button></Link>
         </div>
     )
 }

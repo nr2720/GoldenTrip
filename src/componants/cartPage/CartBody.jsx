@@ -6,11 +6,12 @@ const CartBody = ({isEmpty, El}) => {
             <div className="cartBody">
                 <h1>Your cart</h1>
                 <div className="cartElement">
-                    <img src={El.img} alt="" />
+                    <img src={El.img} alt="FlashTrip Vip" className="flashTripVipLogo" />
                     <h2>{El.title}</h2>
                     <p>{El.text}</p>
                     <p>Price : {El.price}</p>
                 </div>
+                <button className="buttonGold cartButton">Finish order</button>
              </div>
         ) : (
             <div className="cartBodyEmpty">

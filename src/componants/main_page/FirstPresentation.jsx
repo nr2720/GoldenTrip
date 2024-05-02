@@ -1,7 +1,8 @@
 import {useState} from 'react';
-import videoParty from '/videoParty.mp4';
-import videoRelax from '/videoRelax.mp4';
-import videoTravel from '/videoTravel.mp4';
+import imageParty from '/choosePartyMain.png';
+import imageRelax from '/chooseRelaxMain.png';
+import imageExplore from '/chooseExploreMain.png';
+
 
 
 
@@ -12,7 +13,7 @@ function FirstPresentation() {
         english: ['party', 'relax', 'explore']
     });
 
-    const [video, setVideo] = useState(videoParty);
+    const [image, setImage] = useState(imageParty);
 
     //button fct
     function ButtonTrip({name, className, onClick}) {
@@ -31,15 +32,15 @@ function FirstPresentation() {
         switch(option) {
             case 'Party':
                 setChoose(0);
-                setVideo(videoParty);
+                setImage(imageParty);
                 break;
             case 'Relax':
                 setChoose(1);
-                setVideo(videoRelax);
+                setImage(imageRelax);
                 break;
             case 'Explore':
                 setChoose(2);
-                setVideo(videoTravel)
+                setImage(imageExplore);
                 break;
             default:
                 break;   
@@ -53,7 +54,7 @@ function FirstPresentation() {
 
         <div className="firstPresentation">
             <div className="overlay">
-                <video src='' id="myVideo" autoPlay loop muted />
+                <img src={image} id="myImageMain"/>
             </div>
             <div className="firstPresentationCenter">
                { choose === 0 ? (<h1>The best <b className='partyB'>party</b> trip you'll ever live</h1>) :

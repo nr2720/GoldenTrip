@@ -5,7 +5,7 @@ const Options = ({img, title, text, price, id, onClick }) => {
     return(
         <>
             <div className='optionsVip' id={id}>
-                <img src={img} alt="" />
+                <img src={img} className='flashTripVipLogo'alt="FlashTrip Vip" />
                 <h2>{title}</h2>
                 <p>{text}</p>
                 <p>Price : {price} USD</p>

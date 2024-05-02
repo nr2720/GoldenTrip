@@ -57,7 +57,7 @@ function Team() {
 
     return(
 <div className="carouselDay">
-    <h1 id='mysteryH1'>What your average day will look like ?</h1>
+    <h1 id='mysteryH1'>Your average day in pictures</h1>
     <div className="teamSection">
         <div className="slide-wrapper">
             <div className="slider">

@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     background-color: aliceblue;
+    z-index: 0;
 }
 
 .cartPageHeader {
@@ -14,6 +15,11 @@
     width: 100%;
     z-index: 3;
     background: rgb(255, 247, 246);
+    height: 80px;
+}
+
+.cartButton {
+    width: 180px;
 }
 
 .cartHeader {
@@ -71,4 +77,46 @@
     border-radius: 12px;
     width: 20%;
     box-shadow: 0px 0px 50px -20px grey;
+}
+
+
+
+@media (max-width: 500px) {
+
+
+    .containerCartPage {
+        height: 1200px;
+    }
+    .cartPageHeader {
+        height: 131.27px;
+    }
+
+    .cartHeader {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .cartHeader h2 {
+        display: none;
+    }
+
+    .cartBodyEmpty {
+        height: 600px;
+    }
+
+    .cartElement {
+        width: 80%;
+    }
+
+    .cartBody {
+        flex-direction: column;
+        height: 70%;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
 }
