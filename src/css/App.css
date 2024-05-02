@@ -1258,6 +1258,7 @@ input {
   height: 300px;
   width: 100%;
   margin-bottom: 20px;
+  z-index: 0;
 }
 
 .cards label {
@@ -1276,6 +1277,7 @@ input {
   height: 100%;
   width: 100%;
   transition: all 0.35s ease;
+  z-index: 1;
 }
 
 .cards .card:hover {
