@@ -31,9 +31,7 @@ function Team() {
     }
 
     const handleTouch = (event) => {
-        // setSelectedCard(parseInt(event.target.id.slice(1)))
-        alert(event.target.id);
-        console.log(event.target.id);
+        setSelectedCard(parseInt(event.target.id.slice(1)))
     }
 
 
