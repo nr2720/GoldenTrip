@@ -31,7 +31,8 @@ function Team() {
     }
 
     const handleTouch = (event) => {
-        setSelectedCard(parseInt(event.target.id.slice(1)))
+        // setSelectedCard(parseInt(event.target.id.slice(1)))
+        alert(event.target.id);
     }
 
 
@@ -61,11 +62,11 @@ function Team() {
     <div className="teamSection">
         <div className="slide-wrapper">
             <div className="slider">
-                <input type="radio" name="slider" id="s1" defaultChecked={selectedCard === 1} onClick={handleClick} onTouchMove={handleTouch}/>
-                <input type="radio" name="slider" id="s2" defaultChecked={selectedCard === 2} onClick={handleClick} onTouchMove={handleTouch}/>
-                <input type="radio" name="slider" id="s3" defaultChecked={selectedCard === 3} onClick={handleClick} onTouchMove={handleTouch}/>
-                <input type="radio" name="slider" id="s4" defaultChecked={selectedCard === 4} onClick={handleClick} onTouchMove={handleTouch}/>
-                <input type="radio" name="slider" id="s5" defaultChecked={selectedCard === 5} onClick={handleClick} onTouchMove={handleTouch}/>
+                <input type="radio" name="slider" id="s1" defaultChecked={selectedCard === 1} onClick={handleClick} onTouchEnd={handleTouch}/>
+                <input type="radio" name="slider" id="s2" defaultChecked={selectedCard === 2} onClick={handleClick} onTouchEnd={handleTouch}/>
+                <input type="radio" name="slider" id="s3" defaultChecked={selectedCard === 3} onClick={handleClick} onTouchEnd={handleTouch}/>
+                <input type="radio" name="slider" id="s4" defaultChecked={selectedCard === 4} onClick={handleClick} onTouchEnd={handleTouch}/>
+                <input type="radio" name="slider" id="s5" defaultChecked={selectedCard === 5} onClick={handleClick} onTouchEnd={handleTouch}/>
 
                 <div className="cards">
                     <label htmlFor="s1" id="slide1">
