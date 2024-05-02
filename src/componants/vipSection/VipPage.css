@@ -4,10 +4,15 @@
 }
 
 .vipHeader {
-    height: 80px;
-    width: 100%;
-    display: flex;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
     align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: rgb(255, 247, 246);
 }
 .optionsVipDiv {
     width: 100%;

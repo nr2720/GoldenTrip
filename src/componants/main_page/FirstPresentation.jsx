@@ -53,7 +53,7 @@ function FirstPresentation() {
 
         <div className="firstPresentation">
             <div className="overlay">
-                <video src={video} id="myVideo" autoPlay loop muted />
+                <video src='' id="myVideo" autoPlay loop muted />
             </div>
             <div className="firstPresentationCenter">
                { choose === 0 ? (<h1>The best <b className='partyB'>party</b> trip you'll ever live</h1>) :

@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 function Header({name, className}) {
     return(
         <nav className={className}>
-            <Link to='/' className="leftHeader">
+            <Link to='/'>
                 <img src="/flashTrip.png" alt={name} className="Logo" />
             </Link>
-            <div className="rightHeader">
-                <button className="buttonGold">Survey</button>
-                <Link to='/vip' className="buttonGold">VIP</Link>
-            </div>
+            
+                <button className="buttonGold buttonHeaderMain surveyHeader">Survey</button>
+                <Link to='/vip' className="buttonGold buttonHeaderMain vipHeaderButton">VIP</Link>
+            
             <Link to='/cart'>
             <svg id="cartSVG" version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="24.000000pt" height="24.000000pt" viewBox="0 0 24.000000 24.000000"

@@ -20,12 +20,6 @@ import explore5 from '/carouselmg/explore5.png'
 
 
 
-
-
-
-
-
-
 function Team() {
     const [selectedCard, setSelectedCard] = useState(1);
     const [selectedImg, setSelectedImg] = useState(
@@ -35,6 +29,11 @@ function Team() {
     const handleClick = (event) => {
         setSelectedCard(parseInt(event.target.id.slice(1)))
     }
+
+    const handleTouch = (event) => {
+        setSelectedCard(parseInt(event.target.id.slice(1)))
+    }
+
 
     const handleChoice = (event) => {
         let newArr = [];
@@ -62,11 +61,11 @@ function Team() {
     <div className="teamSection">
         <div className="slide-wrapper">
             <div className="slider">
-                <input type="radio" name="slider" id="s1" checked={selectedCard === 1} onClick={handleClick}/>
-                <input type="radio" name="slider" id="s2" checked={selectedCard === 2} onClick={handleClick}/>
-                <input type="radio" name="slider" id="s3" checked={selectedCard === 3} onClick={handleClick}/>
-                <input type="radio" name="slider" id="s4" checked={selectedCard === 4} onClick={handleClick}/>
-                <input type="radio" name="slider" id="s5" checked={selectedCard === 5} onClick={handleClick}/>
+                <input type="radio" name="slider" id="s1" defaultChecked={selectedCard === 1} onClick={handleClick} onTouchMove={handleTouch}/>
+                <input type="radio" name="slider" id="s2" defaultChecked={selectedCard === 2} onClick={handleClick} onTouchMove={handleTouch}/>
+                <input type="radio" name="slider" id="s3" defaultChecked={selectedCard === 3} onClick={handleClick} onTouchMove={handleTouch}/>
+                <input type="radio" name="slider" id="s4" defaultChecked={selectedCard === 4} onClick={handleClick} onTouchMove={handleTouch}/>
+                <input type="radio" name="slider" id="s5" defaultChecked={selectedCard === 5} onClick={handleClick} onTouchMove={handleTouch}/>
 
                 <div className="cards">
                     <label htmlFor="s1" id="slide1">
